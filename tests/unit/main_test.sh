@@ -5,13 +5,13 @@ function set_up() {
   source "$_CURRENT_DIR/../../src/main.sh"
 }
 
-function test_main_without_args() {
+function test_main_action_without_args() {
   actual=$(main::action)
 
   assert_same "Main Action" "$actual"
 }
 
-function test_main_with_args() {
+function test_main_action_with_args() {
   actual=$(main::action arg1 --option="value2")
 
   assert_same "Main Action
