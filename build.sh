@@ -17,7 +17,7 @@ function generate_bin() {
   temp="$(dirname "$out")/temp.sh"
 
   echo '#!/bin/bash' > "$temp"
-  echo "Generating main in the '$(dirname "$out")' folder..."
+  echo "Generating the '$(basename "$out")' in the '$(dirname "$out")' folder..."
   for file in src/*.sh; do
     {
       echo "# $file"
@@ -26,7 +26,7 @@ function generate_bin() {
     } >> "$temp"
   done
 
-  cat main >> "$temp"
+  cat entry-point >> "$temp"
   grep -v '^source' "$temp" > "$out"
   rm "$temp"
   chmod u+x "$out"
@@ -55,4 +55,4 @@ function generate_checksum() {
 OUT_DIR=${1:-"bin"}
 
 mkdir -p "$OUT_DIR"
-build "$OUT_DIR/main"
+build "$OUT_DIR/entry-point"
