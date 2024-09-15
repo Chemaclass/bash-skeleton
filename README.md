@@ -19,6 +19,13 @@ This is a skeleton to start building bash scripts within a powerful yet simple a
 - A Makefile ready with basic commands
   - `Makefile`
 
+## Inspired by
+
+This skeleton is the result of building other projects like:
+
+- bashunit: https://github.com/TypedDevs/bashunit
+- create-pr: https://github.com/Chemaclass/create-pr
+
 ## Contribute
 
 Suggestions, ideas and PRs are more than welcome here!
