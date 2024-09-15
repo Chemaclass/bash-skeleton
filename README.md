@@ -12,3 +12,8 @@ This is a skeleton to start building bash scripts within a powerful yet simple a
 - GitHub Actions to ensure every commit and PR are passing the acceptable
 - Optional pre-commit git hook to trigger tests, linter and static-analysis
 - A Makefile ready with basic commands
+
+## Contribute
+
+Suggestions, ideas and PRs are more than welcome here!
+Please, Check out our [CONTRIBUTING.md](.github/CONTRIBUTING.md) guidelines.
