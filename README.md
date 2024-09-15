@@ -4,14 +4,20 @@ This is a skeleton to start building bash scripts within a powerful yet simple a
 
 ## Features
 
-- Testing library ready to use: bashunit
+- Testing library ready to use: [bashunit](https://github.com/TypedDevs/bashunit/)
+  - `tests/`
 - Source structure to place your functions scripts
+  - `src/`
 - Entry point ready to consume arguments and options
+  - `./entry-point`
 - A building script to mount the whole project into one single executable script
-- Generation of final checksum after building
+  - `./build.sh`
 - GitHub Actions to ensure every commit and PR are passing the acceptable
+  - `.github/workflows/linter,static_analysis,tests`
 - Optional pre-commit git hook to trigger tests, linter and static-analysis
+  - `bin/pre-commit`
 - A Makefile ready with basic commands
+  - `Makefile`
 
 ## Contribute
 
