@@ -1,8 +1,7 @@
 #!/bin/bash
 
 function set_up() {
-  _CURRENT_DIR="$(dirname "${BASH_SOURCE[0]}")"
-  source "$_CURRENT_DIR/../../src/main.sh"
+  source "$(current_dir)/../../src/main.sh"
 }
 
 function test_main_without_args() {

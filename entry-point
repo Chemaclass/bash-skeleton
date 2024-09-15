@@ -7,6 +7,7 @@ declare -r BASH_SKELETON_VERSION="0.1.0"
 BASH_SKELETON_ROOT_DIR="$(dirname "${BASH_SOURCE[0]}")"
 export BASH_SKELETON_ROOT_DIR
 
+source "$BASH_SKELETON_ROOT_DIR/src/dev/debug.sh"
 source "$BASH_SKELETON_ROOT_DIR/src/main.sh"
 # Initialize _ARGS as an array
 _ARGS=()
