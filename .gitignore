@@ -1,0 +1,6 @@
+bin/
+lib/
+.idea/
+.vscode/
+
+.env
