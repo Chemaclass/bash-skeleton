@@ -2,7 +2,7 @@
 set -euo pipefail
 
 function main::action() {
-  local args=("$@")
+  local args=("${@:-}")
 
   echo "Main Action"
 
