@@ -69,9 +69,12 @@ function update_version() {
   case "$version_type" in
     major)
       major=$((major + 1))
+      minor=0
+      patch=0
       ;;
     minor)
       minor=$((minor + 1))
+      patch=0
       ;;
     patch)
       patch=$((patch + 1))
