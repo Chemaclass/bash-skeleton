@@ -1,31 +1,33 @@
 # bash-skeleton
 
-This is a skeleton to start building bash scripts within a powerful yet simple architecture in place.
+This skeleton provides a strong yet simple foundation, making it easy to start building robust Bash scripts with a
+well-structured architecture.
+
 ## Features
 
-- **Dependency Management**: Utilizes [bashdep](https://github.com/Chemaclass/bashdep) for managing dependencies efficiently.
-    - Install dependencies with: `install-dependencies.sh`
+- **Dependency Management**: Uses [bashdep](https://github.com/Chemaclass/bashdep) for managing dependencies.
+    - Install with: `install-dependencies.sh`
 
-- **Testing Library**: Integrates [bashunit](https://github.com/TypedDevs/bashunit/) as the testing library to ensure your code is robust and error-free.
-    - Tests are organized under: `tests/`
+- **Testing**: Integrates [bashunit](https://github.com/TypedDevs/bashunit/) for testing.
+    - Tests in: `tests/`
 
-- **Modular Source Structure**: A clean structure to organize your function scripts for better modularity and maintainability.
-    - Place function scripts in: `src/`
+- **Source Structure**: Organize functions in different files.
+    - Source in: `src/`
 
-- **Ready-to-Use Entry Point**: A main entry script that handles arguments and options, making it easy to start your project.
-    - Entry point script: `./entry-point`
+- **Entry Point**: Ready to handle arguments and options.
+    - Script: `./entry-point`
 
-- **Build System**: A `build.sh` script that bundles your entire project into a single executable for ease of distribution.
-    - Build your project with: `./build.sh`
+- **Build System**: Bundle your project into a single executable.
+    - Use: `./build.sh`
 
-- **Continuous Integration**: GitHub Actions are set up to automatically run linting, static analysis, and tests on every commit and pull request.
-    - Workflow files located at: `.github/workflows/linter, static_analysis, tests`
+- **CI**: Automates linting, static analysis, and tests on commits/PRs.
+    - Workflows in: `.github/workflows/`
 
-- **Pre-commit Git Hook**: An optional pre-commit hook to enforce quality by running tests, linters, and static analysis before each commit.
-    - Hook script: `bin/pre-commit`
+- **Pre-commit Hook**: Optional hook for running tests, linter, and analysis.
+    - Script: `bin/pre-commit`
 
-- **Makefile**: Provides a ready-to-use Makefile with common commands to streamline project management.
-    - Basic commands available in: `Makefile`
+- **Makefile**: Simplifies project management with basic commands.
+    - Available in: `Makefile`
 
 ## Inspired by
 
