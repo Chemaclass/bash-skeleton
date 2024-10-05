@@ -4,7 +4,9 @@ This is a skeleton to start building bash scripts within a powerful yet simple a
 
 ## Features
 
-- Testing library ready to use: [bashunit](https://github.com/TypedDevs/bashunit/)
+- Uses [bashdep](https://github.com/Chemaclass/bashdep) as dependency manager
+  - `install-dependencies.sh`
+- Uses [bashunit](https://github.com/TypedDevs/bashunit/) as testing library:
   - `tests/`
 - Source structure to place your functions scripts
   - `src/`
@@ -25,6 +27,8 @@ This skeleton is the result of building other projects like:
 
 - bashunit: https://github.com/TypedDevs/bashunit
 - create-pr: https://github.com/Chemaclass/create-pr
+- bashdep: https://github.com/Chemaclass/bashdep
+- release: https://github.com/Purpose-Green/release
 
 ## Contribute
 
