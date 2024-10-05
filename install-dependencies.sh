@@ -1,12 +1,11 @@
 #!/bin/bash
 
-# Make sure the dependency manager is installed
-if [ ! -f lib/bashdep ]; then
-  [[ ! -d "lib" ]] && mkdir -p "lib"
-  curl -s -L -o lib/bashdep \
-    https://github.com/Chemaclass/bashdep/releases/download/0.1/bashdep
+# Ensure bashdep is installed
+[ ! -f lib/bashdep ] && {
+  mkdir -p lib
+  curl -sLo lib/bashdep https://github.com/Chemaclass/bashdep/releases/download/0.1/bashdep
   chmod +x lib/bashdep
-fi
+}
 
 DEPENDENCIES=(
   "https://github.com/TypedDevs/bashunit/releases/download/0.17.0/bashunit"
