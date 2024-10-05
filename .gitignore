@@ -1,4 +1,18 @@
-bin/
-lib/
+###########
+# IDE
+###########
 .idea/
 .vscode/
+
+###########
+# Project
+###########
+
+# generated single executable after build
+bin/
+
+# third party tools
+lib/
+
+# third party dev-deps
+src/dev/*
