@@ -1,25 +1,31 @@
 # bash-skeleton
 
 This is a skeleton to start building bash scripts within a powerful yet simple architecture in place.
-
 ## Features
 
-- Uses [bashdep](https://github.com/Chemaclass/bashdep) as dependency manager
-  - `install-dependencies.sh`
-- Uses [bashunit](https://github.com/TypedDevs/bashunit/) as testing library:
-  - `tests/`
-- Source structure to place your functions scripts
-  - `src/`
-- Entry point ready to consume arguments and options
-  - `./entry-point`
-- A building script to mount the whole project into one single executable script
-  - `./build.sh`
-- GitHub Actions to ensure every commit and PR are passing the acceptable
-  - `.github/workflows/linter,static_analysis,tests`
-- Optional pre-commit git hook to trigger tests, linter and static-analysis
-  - `bin/pre-commit`
-- A Makefile ready with basic commands
-  - `Makefile`
+- **Dependency Management**: Utilizes [bashdep](https://github.com/Chemaclass/bashdep) for managing dependencies efficiently.
+    - Install dependencies with: `install-dependencies.sh`
+
+- **Testing Library**: Integrates [bashunit](https://github.com/TypedDevs/bashunit/) as the testing library to ensure your code is robust and error-free.
+    - Tests are organized under: `tests/`
+
+- **Modular Source Structure**: A clean structure to organize your function scripts for better modularity and maintainability.
+    - Place function scripts in: `src/`
+
+- **Ready-to-Use Entry Point**: A main entry script that handles arguments and options, making it easy to start your project.
+    - Entry point script: `./entry-point`
+
+- **Build System**: A `build.sh` script that bundles your entire project into a single executable for ease of distribution.
+    - Build your project with: `./build.sh`
+
+- **Continuous Integration**: GitHub Actions are set up to automatically run linting, static analysis, and tests on every commit and pull request.
+    - Workflow files located at: `.github/workflows/linter, static_analysis, tests`
+
+- **Pre-commit Git Hook**: An optional pre-commit hook to enforce quality by running tests, linters, and static analysis before each commit.
+    - Hook script: `bin/pre-commit`
+
+- **Makefile**: Provides a ready-to-use Makefile with common commands to streamline project management.
+    - Basic commands available in: `Makefile`
 
 ## Inspired by
 

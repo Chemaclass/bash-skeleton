@@ -2,8 +2,9 @@
 
 # Make sure the dependency manager is installed
 if [ ! -f lib/bashdep ]; then
-  [[ ! -d "lib" ]] && mkdir "lib"
-  curl -s -L -o lib/bashdep https://github.com/Chemaclass/bashdep/releases/download/0.1/bashdep.sh
+  [[ ! -d "lib" ]] && mkdir -p "lib"
+  curl -s -L -o lib/bashdep \
+    https://github.com/Chemaclass/bashdep/releases/download/0.1/bashdep
   chmod +x lib/bashdep
 fi
 
