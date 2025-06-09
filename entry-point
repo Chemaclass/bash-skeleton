@@ -9,6 +9,16 @@ export BASH_SKELETON_ROOT_DIR
 
 source "$BASH_SKELETON_ROOT_DIR/src/dev/dumper.sh"
 source "$BASH_SKELETON_ROOT_DIR/src/main.sh"
+# Usage helper
+function show_help() {
+  cat <<EOF
+Usage: $(basename "$0") [options] [args...]
+  -h, --help          Show this help message
+  -v, --version       Show script version
+  -e, --env <file>    Load environment variables from file
+  --debug             Enable debug mode
+EOF
+}
 # Initialize _ARGS as an array
 _ARGS=()
 
@@ -17,6 +27,14 @@ while [[ $# -gt 0 ]]; do
   case $argument in
     --debug)
       set -x
+      ;;
+    -h|--help)
+      show_help
+      exit 0
+      ;;
+    -v|--version)
+      echo "$BASH_SKELETON_VERSION"
+      exit 0
       ;;
     -e|--env)
       # shellcheck disable=SC1090

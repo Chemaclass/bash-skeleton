@@ -29,6 +29,26 @@ well-structured architecture.
 - **Makefile**: Simplifies project management with basic commands.
     - Available in: `Makefile`
 
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   ./install-dependencies.sh
+   ```
+2. Run the test suite:
+   ```bash
+   make test
+   ```
+3. Optionally install the pre-commit hook so checks run automatically:
+   ```bash
+   make pre_commit/install
+   ```
+
+Run `make help` to list all available commands.
+
+The entry point now supports `--help` and `--version` flags to display usage
+information and the current version respectively.
+
 ## Inspired by
 
 This skeleton is the result of building other projects like:
